@@ -2,51 +2,58 @@
 <html lang="en" >
 <head>
   <meta charset="UTF-8">
-  <title>CodePen - -wow-spin-up-spring23-</title>
+  <title>loose-juice-charlie</title>
   <meta name="viewport" content="width=device-width, initial-scale=1"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
-<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0.2/css/bootstrap.min.css'><link rel="stylesheet" href="./style.css">
+<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0.2/css/bootstrap.min.css'><link rel="stylesheet" href="./styles/style.css">
 
 </head>
 <body>
-<!-- partial:index.partial.html -->
-<div class='title_card'>
-	<p class='tpa'>What is the correct move? Move the Pawn to the correct answer.</p>
+<div id="header" class="row">
+  <h1>Can you solve the chess puzzle? What is the correct move?</h1>
 </div>
-<blockquote class="imgur-embed-pub" lang="en" data-id="a/DPkAz3g" data-context="false"><a href="//imgur.com/a/DPkAz3g"></a></blockquote>
-<script async src="//s.imgur.com/min/embed.js" charset="utf-8"></script>
 
-<html lang="en">
+<div class="container">
+  <div class="row">
+    <div class="col-md-4">
+      <div class="row">
+        <div class="col-md-4 ml-1" id="div1">
+          <div id="correct" class="clickable-div" onclick="">It's a draw.</div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-4" id="div1">
+          <div id="incorrect" class="clickable-div" onclick="">Queen f8</div>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="row">
+        <div class="col-md-4">
+          <img src="./img/chess.png" alt="Chess board" id="chessboard">
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
 
-<head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>jQuery UI Droppable - Prevent propagation</title>
-	<link rel="stylesheet" href="//code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
-	<link rel="stylesheet" href="/resources/demos/style.css">
+<div id="credits">Jason Conkle</div>
 
-</head>
 
-<body>
-
-	<div id="draggable" class="ui-widget-content">
-		<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/45/Chess_plt45.svg/120px-Chess_plt45.svg.png" alt="Draggable Image">
-	</div>
-	</div>
-
-	<div id="droppable2" class="ui-widget-header">
-		<p>Qf8</p>
-		<div id="droppable2-inner" class="ui-widget-header">
-			<p>It's a Draw</p>
-		</div>
-	</div>
-
-</body>
-
-</html>
-<!-- partial -->
-  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js'></script>
-<script src='https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js'></script>
-<script src='https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.3/js/bootstrap.min.js'></script><script  src="./script.js"></script>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.13.2/jquery-ui.min.js'></script><script  src="./scripts/script.js"></script>
 
 </body>
 </html>
+
+<!-- Important Changes 
+- Ripped out everything and started from scratch
+- Moved from wierd draggables to clickables
+- At least one thing works
+- Updated file directory
+- Added ./img to avoid bad URLs
+- It's endlessly interactive now
+- Code is legible
+- Changed from fragmented, stolen code to seemless, original code
+- Added name
+-->
+
